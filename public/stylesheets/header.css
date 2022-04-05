@@ -1,0 +1,8 @@
+header {
+    background-color: var(--colorRojo);
+}
+
+
+header a {
+    text-transform: uppercase;
+}
