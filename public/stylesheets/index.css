@@ -1,5 +1,77 @@
-.index__products {
-
+.index__products{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
 }
 
-/* mobile  large */
+.index__produts__product{
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+    padding: 10px 0;
+}
+
+.index__produts__product  img{
+    width: 100%;
+}
+
+.index__produts__product h4{
+    margin: 10px 0;
+}
+
+.index__products__product__more{
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--colorRojo);
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* aside de tutoriales y publicidad */
+
+.index__tutoriales h3{
+    margin-top: 30px;
+}
+.index__tutoriales h3 , .index__publicidad h3{
+    border: 1px solid var(--colorBorde);
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.index__toturiales__tutorial{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid var(--colorBorde);
+    border-bottom: none;
+}
+
+.index__toturiales__tutorial{
+    border-bottom: 1px solid var(--colorBorde);
+}
+
+index__toturiales__tutorialn p{
+   
+    margin-left: 10px;
+}
+
+.index__publicidad__add{
+    background-color: white;
+    padding: 0 10px;
+    border: 1px solid var(--colorBorde);
+}
+
+.index__publicidad__add img{
+    margin: 10px 0;
+    width: 100%;
+}
+
+@media (min-width : 425px){
+
+}
