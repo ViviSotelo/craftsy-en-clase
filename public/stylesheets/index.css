@@ -8,7 +8,7 @@
 }
 
 .index__produts__product{
-     width: 300px;
+     width: 95%;
      display: flex;
      flex-direction: column;
     padding: 10px 0;
@@ -56,11 +56,13 @@
     border-bottom: 1px solid var(--colorBorde);
 }
 
-index__toturiales__tutorialn p{
+index__toturiales__tutorial p{
    
     margin-left: 10px;
 }
-
+.index__publicidad{/* advertising asi lo tienen el profe */
+    margin-top: 30px;
+}
 .index__publicidad__add{
     background-color: white;
     padding: 0 10px;
@@ -71,7 +73,81 @@ index__toturiales__tutorialn p{
     margin: 10px 0;
     width: 100%;
 }
-
+/* mobile large */
 @media (min-width : 425px){
 
+    .index main{
+        padding: 0 30px;
+    }
+
+    /* seccion productos */
+
+    .index__products{
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+   }
+    .index__produts__product{
+        width: 45%;
+       
+   }
+
+   
+}
+/* tablets */
+@media(min-width: 768px){
+
+    .index main{
+        padding: 0 50px;
+    }
+
+/* seccion producto */
+
+    .index__products{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+
+    .index aside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .index__tutoriales , .index__publicidad{
+        width: 320px;
+    }
+}
+
+/* laptops */
+@media (min-width: 1024px){
+    .index {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .index main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .index__products{
+        width: 800px;
+    }
+    .index__produts__product{
+        width: 380px;
+       
+   }
+    
+
+    .index aside{
+       
+       flex-direction: column;
+        justify-content: flex-start;
+    }
+    
 }
